@@ -1,6 +1,6 @@
 FROM PHP:Latest
 
-RUN mkdir /covidstat/index.php
+RUN mkdir -p /covidstat/index.php
 
 WORKDIR /covidstat/index.php
 
