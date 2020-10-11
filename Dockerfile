@@ -1,4 +1,4 @@
-FROM PHP:Latest
+FROM php:latest
 
 RUN mkdir -p /covidstat/index.php
 
