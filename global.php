@@ -190,7 +190,8 @@ $datesDeathsFormattedShort = '"'.implode('","',$itemsD).'"' ;
           <div class="fl w-50-ns pa2">
           <h1 class="mt0">👑COVID-19<img class="theme-icon" src="assets/img/coronavirus.svg"> Tracker</h1>
           <p class="lh-copy measure black-60">
-            Track the Coronavirus Covid-19 outbreak& search countries
+            Track the Coronavirus Covid-19 outbreak& search countries.
+            data sourced from Johns Hopkins University, WorldoMeters updated every 10 minutes.
           </p>
            </div>
             <div class="fl w-50-ns pa2 link">
