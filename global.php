@@ -112,7 +112,7 @@ $datesDeathsFormattedShort = '"'.implode('","',$itemsD).'"' ;
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>COVID-19 Tracker</title>
+  <title>👑COVID-19 Tracker</title>
   <meta name="description" content="Track the spread of the Coronavirus Covid-19 outbreak">
 
   <link rel="stylesheet" href="assets/css/tachyons.min.css">
@@ -188,7 +188,7 @@ $datesDeathsFormattedShort = '"'.implode('","',$itemsD).'"' ;
       <article class="cf">
         <header class="header mw5 mw7-ns tl pa3">
           <div class="fl w-50-ns pa2">
-          <h1 class="mt0">🦠 COVID-19 Tracker</h1>
+          <h1 class="mt0">👑COVID-19<img class="theme-icon" src="assets/img/coronavirus.svg">Tracker</h1>
           <p class="lh-copy measure black-60">
             Track the spread of the Coronavirus Covid-19 outbreak
           </p>
