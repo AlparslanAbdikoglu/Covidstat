@@ -89,8 +89,8 @@
           <div class="fl w-50-ns pa2">
           <h1 class="mt0">👑Koronavírus<img class="theme-icon" src="assets/img/coronavirus.svg">Statisztika</h1> 
           <p class="lh-copy measure black-60">
-             Covid-19 Világ és Hazai statisztikák, hírek intézkedések.
-             Az adatok hitelességét a Worldometers és a Johns Hopkins University biztosítja.
+             Covid-19 Világ és Hazai statisztikák, hírek intézkedések.<br>
+             Az adatok hitelességét a Worldometers és a Johns Hopkins University biztosítja.</br>
           </p>   
            </div>
         <!-- FB SHARE HERE-->
