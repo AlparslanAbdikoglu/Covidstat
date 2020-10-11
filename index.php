@@ -135,7 +135,7 @@
         </div>
       </article>
       <div class="fl w-50-ns pa2 link">
-      <a href="" target="_blank" class="navlinkblock w-inline-block" style=";">
+      <a href="/global.php" target="_blank" class="navlinkblock w-inline-block" style=";">
                 <div class="navbuttoniconwrapper coffee"></div>
                 <div class="phbuttontextcontainer">
                     <div class="navlinktext phcopy" style="">Világ Statisztika</div>
