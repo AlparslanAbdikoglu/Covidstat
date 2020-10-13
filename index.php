@@ -96,6 +96,9 @@
         <!-- FB SHARE HERE-->
 
         </header>
+        <br>
+        <br>
+        <br>
         <style>h1 {text-align: center;}</style>
         <h1 class="mt0">🇭🇺<img class="theme-icon" src="assets/img/coronavirus.svg">Statisztika</h1>
         <div class="fl w-50 tc stat-card">
@@ -166,7 +169,7 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
             <span class="icon">
             <img src="https://img.icons8.com/cute-clipart/64/000000/coughing.png"/>
             </span>
-            <h3 class="black-40 ttu tl"> Száraz Köhögés, torok fájás</h3>
+            <h3 class="black-40 ttu tl"> Száraz Köhögés, torokfájás</h3>
           </div>
         </div>
       </article>
@@ -184,7 +187,7 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
             <span class="icon">
             <img src="https://img.icons8.com/cute-clipart/64/000000/fever.png"/>
             </span>
-            <h3 class="black-40 ttu tl">Láz.hasmenés, légszomj.</h3>
+            <h3 class="black-40 ttu tl">Láz,hasmenés, légszomj.</h3>
           </div>
         </div>
       </article>
