@@ -119,15 +119,16 @@ $datesDeathsFormattedShort = '"'.implode('","',$itemsD).'"' ;
   <link rel="stylesheet" href="assets/css/site.css?v=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-  <!-- Global site tag (gtag.js) - Google Analytics 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162093056-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180533926-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    gtag('config', 'UA-162093056-1');
-  </script>-->
+  gtag('config', 'UA-180533926-1');
+</script>
+
 
   <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon//apple-icon-60x60.png">
@@ -149,20 +150,14 @@ $datesDeathsFormattedShort = '"'.implode('","',$itemsD).'"' ;
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Open Graph / Facebook 
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://viruscovid.tech">
-  <meta property="og:title" content="🦠COVID-19 Tracker">
-  <meta property="og:description" content="Track the spread of the Coronavirus Covid-19 outbreak">
-  <meta property="og:image" content="https://viruscovid.tech/assets/img/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
-
-   Twitter 
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://viruscovid.tech">
-  <meta property="twitter:title" content="🦠COVID-19 Tracker">
-  <meta property="twitter:description" content="Track the spread of the Coronavirus Covid-19 outbreak">
-  <meta property="twitter:image" content="https://viruscovid.tech/assets/img/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
-  <script type="text/javascript" src="assets/js/Chart.bundle.min.js"></script> -->
+ <!-- Open Graph / Facebook-->
+ <meta property="og:type" content="website">
+  <meta property="og:url" content="http://koronainfok.com/">
+  <meta property="og:title" content="🦠KoronaVírus Statisztika">
+  <meta property="og:description" content="Covid-19 Világ és Hazai statisztikák, hírek intézkedések.
+Az adatok hitelességét a Worldometers és a Johns Hopkins University biztosítja.">
+  <meta property="og:image" content="http://koronainfok.com/assets/img/metafb.png">
+  <meta property="fb:app_id" content="715011399363581">
 
   <!-- Datatables -->
   <script src="https://cdn.datatables.net/v/bs4/dt-1.10.20/datatables.min.js"></script>
@@ -190,9 +185,7 @@ $datesDeathsFormattedShort = '"'.implode('","',$itemsD).'"' ;
           <div class="fl w-50-ns pa2">
           <h1 class="mt0">👑COVID-19<img class="theme-icon" src="assets/img/coronavirus.svg"> Tracker</h1>
           <p class="lh-copy measure black-60">
-            Track the Coronavirus Covid-19 outbreak& search countries.
-            data sourced from Johns Hopkins University, WorldoMeters.
-          </p>
+            Track the Coronavirus Covid-19 outbreak& search countries.</p>
            </div>
             <div class="fl w-50-ns pa2 link">
             <!--FBSHARE-->
@@ -256,6 +249,10 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
           </div>
         </div>
       </article>
+      <br>
+      <style>p{text-align: center;}</style>
+      <br><p class="lh-copy measure black-60">
+      Data sourced from Johns Hopkins University, WorldoMeters.</p></br>
       <section class="country-table">
 
         <div class="table-responsive">

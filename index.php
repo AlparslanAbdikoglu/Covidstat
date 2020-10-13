@@ -18,15 +18,16 @@
   <link rel="stylesheet" href="assets/css/site.css?v=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-  <!-- Global site tag (gtag.js) - Google Analytics
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162093056-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180533926-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    gtag('config', 'UA-162093056-1');
-  </script>-->
+  gtag('config', 'UA-180533926-1');
+</script>
+
 
   <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon//apple-icon-60x60.png">
@@ -54,16 +55,8 @@
   <meta property="og:title" content="🦠KoronaVírus Statisztika">
   <meta property="og:description" content="Covid-19 Világ és Hazai statisztikák, hírek intézkedések.
 Az adatok hitelességét a Worldometers és a Johns Hopkins University biztosítja.">
-  <meta property="og:image" content="http://koronainfok.com/assets/img/coronavirus.svg">
-
-  <!--Twitter-->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="http://koronainfok.com/">
-  <meta property="og:title" content="🦠KoronaVírus Statisztika">
-  <meta property="og:description" content="Covid-19 Világ és Hazai statisztikák, hírek intézkedések.
-Az adatok hitelességét a Worldometers és a Johns Hopkins University biztosítja.">
-  <meta property="og:image" content="http://koronainfok.com/assets/img/coronavirus.svg">
-  <script type="text/javascript" src="assets/js/Chart.bundle.min.js"></script>
+  <meta property="og:image" content="http://koronainfok.com/assets/img/metafb.png">
+  <meta property="fb:app_id" content="715011399363581">
 
   <!-- Datatables -->
   <script src="https://cdn.datatables.net/v/bs4/dt-1.10.20/datatables.min.js"></script>
@@ -82,9 +75,9 @@ Az adatok hitelességét a Worldometers és a Johns Hopkins University biztosít
               <div class="switch-wrapper">
                   <img class="theme-icon" src="assets/img/moon.svg">
                   <div class="theme-switch">
-                      <div class="switch"></div> 
+                      <div class="switch"></div>
                   </div>
-              </div>
+              </div><div class="fb-share-button" data-href="http://koronainfok.com/" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fkoronainfok.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Megosztás</a></div>
           </nav>
           <article class="cf">
         <header class="header mw5 mw7-ns tl pa3">
@@ -93,8 +86,9 @@ Az adatok hitelességét a Worldometers és a Johns Hopkins University biztosít
           <p class="lh-copy measure black-60">
              Covid-19 Világ és Hazai statisztikák, hírek intézkedések.</p>
            </div>
-        <!-- FB SHARE HERE-->
-
+        <!-- FB SHARE HERE sdk-->
+        <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/hu_HU/sdk.js#xfbml=1&version=v8.0&appId=715011399363581&autoLogAppEvents=1" nonce="Nqn3gqHw"></script>
         </header>
         <style>h1 {text-align: center;}</style>
         <br><h1 class="mt0">🇭🇺<img class="theme-icon" src="assets/img/coronavirus.svg">Statisztika</h1>
