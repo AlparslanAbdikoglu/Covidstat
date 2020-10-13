@@ -48,20 +48,22 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Open Graph / Facebook
+  <!-- Open Graph / Facebook-->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://viruscovid.tech">
-  <meta property="og:title" content="🦠COVID-19 Tracker">
-  <meta property="og:description" content="Track the spread of the Coronavirus Covid-19 outbreak">
-  <meta property="og:image" content="https://viruscovid.tech/assets/img/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+  <meta property="og:url" content="http://koronainfok.com/">
+  <meta property="og:title" content="🦠KoronaVírus Statisztika">
+  <meta property="og:description" content="Covid-19 Világ és Hazai statisztikák, hírek intézkedések.
+Az adatok hitelességét a Worldometers és a Johns Hopkins University biztosítja.">
+  <meta property="og:image" content="http://koronainfok.com/assets/img/coronavirus.svg">
 
-  Twitter
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://viruscovid.tech">
-  <meta property="twitter:title" content="🦠COVID-19 Tracker">
-  <meta property="twitter:description" content="Track the spread of the Coronavirus Covid-19 outbreak">
-  <meta property="twitter:image" content="https://viruscovid.tech/assets/img/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
-  <script type="text/javascript" src="assets/js/Chart.bundle.min.js"></script> -->
+  <!--Twitter-->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://koronainfok.com/">
+  <meta property="og:title" content="🦠KoronaVírus Statisztika">
+  <meta property="og:description" content="Covid-19 Világ és Hazai statisztikák, hírek intézkedések.
+Az adatok hitelességét a Worldometers és a Johns Hopkins University biztosítja.">
+  <meta property="og:image" content="http://koronainfok.com/assets/img/coronavirus.svg">
+  <script type="text/javascript" src="assets/js/Chart.bundle.min.js"></script>
 
   <!-- Datatables -->
   <script src="https://cdn.datatables.net/v/bs4/dt-1.10.20/datatables.min.js"></script>
