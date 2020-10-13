@@ -91,18 +91,13 @@ Az adatok hitelességét a Worldometers és a Johns Hopkins University biztosít
           <div class="fl w-50-ns pa2">
           <h1 class="mt0">👑Koronavírus<img class="theme-icon" src="assets/img/coronavirus.svg">Statisztika</h1> 
           <p class="lh-copy measure black-60">
-             Covid-19 Világ és Hazai statisztikák, hírek intézkedések.<br>
-             Az adatok hitelességét a Worldometers és a Johns Hopkins University biztosítja.</br>
-          </p>   
+             Covid-19 Világ és Hazai statisztikák, hírek intézkedések.</p>
            </div>
         <!-- FB SHARE HERE-->
 
         </header>
-        <br>
-        <br>
-        <br>
         <style>h1 {text-align: center;}</style>
-        <h1 class="mt0">🇭🇺<img class="theme-icon" src="assets/img/coronavirus.svg">Statisztika</h1>
+        <br><h1 class="mt0">🇭🇺<img class="theme-icon" src="assets/img/coronavirus.svg">Statisztika</h1>
         <div class="fl w-50 tc stat-card">
           <div class="card-box tilebox-one">
             <span class="icon">
@@ -155,6 +150,9 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
             <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="Alparslan" data-color="#000000" data-emoji=""  data-font="Cookie" data-text="Hívj meg egy Kávéra" data-outline-color="#fff" data-font-color="#fff" data-coffee-color="#fd0" ></script>
       <br>
       <br>
+      <style>p{text-align: center;}</style>
+      <br><p class="lh-copy measure black-60">
+      Az adatok hitelességét a Worldometers és a Johns Hopkins University biztosítja.</p></br>
       <br>
       <style>h1 {text-align: center;}</style>
         <h1 class="mt0">🦠Tünetek Jellemzői</h1>
@@ -189,7 +187,7 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
             <span class="icon">
             <img src="https://img.icons8.com/cute-clipart/64/000000/fever.png"/>
             </span>
-            <h3 class="black-40 ttu tl">Láz,hasmenés, légszomj.</h3>
+            <h3 class="black-40 ttu tl">Láz, hasmenés, légszomj</h3>
           </div>
         </div>
       </article>
