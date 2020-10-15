@@ -189,6 +189,8 @@ Az adatok hitelességét a Worldometers és a Johns Hopkins University biztosít
            </div>
             <div class="fl w-50-ns pa2 link">
             <!--FBSHARE-->
+            <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/hu_HU/sdk.js#xfbml=1&version=v8.0&appId=715011399363581&autoLogAppEvents=1" nonce="Nqn3gqHw"></script>
             <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="Alparslan" data-color="#000000" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#fff" data-font-color="#fff" data-coffee-color="#fd0" ></script>
 
         </header>
