@@ -1,0 +1,21 @@
+entryPoints:
+  web:
+    address: ":80"
+
+  websecure:
+    address: ":443"
+
+providers:
+  docker:
+    endpoint: "unix:///var/run/docker.sock"
+
+certificatesResolvers:
+  letsEncrypt:
+    acme:
+      email: alparslanabdik@gmail.com
+      storage: /etc/traefik/acme/acme.json
+      httpChallenge:
+        entryPoint: web
+
+
+#https://www.qloaked.com/traefik-lets-encrypt-ssl-tutorial/#
