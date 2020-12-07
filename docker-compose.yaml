@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  reverse-proxy:
+    # The official v2 Traefik docker image
+    image: traefik:v2.3
+    ports:
+      # The HTTP port
+      - "80:80"
+      # The HTTPS port
+      - "443:443"
+    volumes:
+      # So that Traefik can listen to the Docker events
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /root/traefik-server/traefik.yml:/etc/traefik/traefik.yml
+      - /root/traefik-server/acme.json:/etc/traefik/acme/acme.json
+    restart: unless-stopped
+  covidstat:
+    image: alparslanabdikoglu/covidapp
+    restart: unless-stopped
+    labels:
+      - "traefik.http.routers.covidstat.rule=Host(`koronainfok.com`)"
+      - "traefik.http.routers.covidstat.middlewares=covidstat-ssl"
+
+      - "traefik.http.middlewares.covidstat-ssl.redirectscheme.scheme=https"
+      - "traefik.http.middlewares.covidstat-ssl.redirectscheme.permanent=true"
+
+      - "traefik.http.routers.covidstat-ssl.rule=Host(`koronainfok.com`)"
+      - "traefik.http.routers.covidstat-ssl.tls=true"
+      - "traefik.http.routers.covidstat-ssl.tls.certresolver=letsEncrypt"
+      - "traefik.http.routers.covidstat-ssl.tls.domains[0].main=koronainfok.com"
