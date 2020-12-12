@@ -7,14 +7,79 @@ services:
     ports:
       # The HTTP port
       - "80:80"
+      - "8085:8080" # <== :8080 is where the dashboard runs on
       # The HTTPS port
       - "443:443"
+    command:
+    #### These are the CLI commands that will configure Traefik and tell it how to work! ####
+      ## API Settings - https://docs.traefik.io/operations/api/, endpoints - https://docs.traefik.io/operations/api/#endpoints ##
+      - --api.insecure=true # <== Enabling insecure api, NOT RECOMMENDED FOR PRODUCTION
+      - --api.dashboard=true # <== Enabling the dashboard to view services, middlewares, routers, etc...
+      - --api.debug=true # <== Enabling additional endpoints for debugging and profiling
     volumes:
       # So that Traefik can listen to the Docker events
       - /var/run/docker.sock:/var/run/docker.sock
       - /root/traefik-server/traefik.yml:/etc/traefik/traefik.yml
       - /root/traefik-server/acme.json:/etc/traefik/acme/acme.json
+    labels:
+    #### Labels define the behavior and rules of the traefik proxy for this container ####
+      - "traefik.enable=true" # <== Enable traefik on itself to view dashboard and assign subdomain to view it
+      - "traefik.http.routers.api.rule=Host(`traefik.koronainfok.com`)" # <== Setting the domain for the dashboard
+      - "traefik.http.routers.api.service=api@internal" # <== Enabling the api to be a service to access
     restart: unless-stopped
+  seafile-db:
+    image: mariadb:10.1
+    container_name: seafile-mysql
+    restart: unless-stopped
+    environment:
+      - MYSQL_ROOT_PASSWORD=db_dev <----- jelszo ----->
+      - MYSQL_LOG_CONSOLE=true
+    volumes:
+      - ./mysql-db:/var/lib/mysql
+    networks:
+      - seafile-net
+
+  memcached:
+    image: memcached:1.5.6
+    container_name: seafile-memcached
+    restart: unless-stopped
+    entrypoint: memcached -m 256
+    networks:
+      - seafile-net
+
+  seafile:
+    image: seafileltd/seafile-mc:latest
+    container_name: seafile
+    restart: unless-stopped
+    volumes:
+      - ./seafile-data:/shared
+    environment:
+      - DB_HOST=seafile-db
+      - DB_ROOT_PASSWD=db_dev <-----  MySQL jelszo same as above ----->
+      - TIME_ZONE=Europe/Berlin
+      - SEAFILE_ADMIN_EMAIL=test@ <----- Admin E-Mail ----->
+      - SEAFILE_ADMIN_PASSWORD=test <-----  Admin jelszo ----->
+      - SEAFILE_SERVER_LETSENCRYPT=false
+      - SEAFILE_SERVER_HOSTNAME=abdikogluailesi.site <----- server host name ----->
+
+    labels:
+      - "traefik.http.routers.covidstat.rule=Host(`abdikogluailesi.site`)"
+      - "traefik.http.routers.seastorage.middlewares=seastorage-ssl"
+
+      - "traefik.http.middlewares.seastorage-ssl.redirectscheme.scheme=https"
+      - "traefik.http.middlewares.seastorage-ssl.redirectscheme.permanent=true"
+
+      - "traefik.http.routers.seastorage-ssl.rule=Host(`abdikogluailesi.site`)"
+      - "traefik.http.routers.seastorage-ssl.tls=true"
+      - "traefik.http.routers.seastorage-ssl.tls.certresolver=letsEncrypt"
+      - "traefik.http.routers.seastorage-ssl.tls.domains[0].main=abdikogluailesi.site"
+
+    depends_on:
+      - seafile-db
+      - memcached
+    networks:
+      - seafile-net
+      - proxy
   covidstat:
     image: alparslanabdikoglu/covidapp
     restart: unless-stopped
@@ -29,3 +94,8 @@ services:
       - "traefik.http.routers.covidstat-ssl.tls=true"
       - "traefik.http.routers.covidstat-ssl.tls.certresolver=letsEncrypt"
       - "traefik.http.routers.covidstat-ssl.tls.domains[0].main=koronainfok.com"
+
+networks:
+  seafile-net:
+  proxy:
+    external: true
