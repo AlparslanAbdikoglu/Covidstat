@@ -43,3 +43,5 @@ services:
 networks:
   proxy:
     external: true
+    
+    #Tra dash : # UserName : admin # Password : qwer1234
